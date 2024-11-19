@@ -1,0 +1,11 @@
+// フォントサイズ
+// モニタサイズ1600pxを起点にしたvwのサイズ指定
+@function vw($size, $viewport: 1600) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+
+@function rem($value) {
+  $fontsize: ($value / 16);
+  @return $fontsize * 1rem;
+}

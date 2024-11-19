@@ -1,0 +1,293 @@
+@import "_variable.scss";
+@import "_mixin.scss";
+
+body {
+  background-color: $base;
+  color: $font;
+  font-family: $NotoSans;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: $base;
+  font-family: $Oawald;
+  font-size: clamp(rem(26), vw(48), rem(48));
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+h2 {
+  font-weight: bold;
+  font-family: $Oawald;
+  font-size: rem(48);
+  letter-spacing: 0.1em;
+}
+
+h3 {
+  font-family: $Oawald;
+  font-size: rem(24);
+  font-weight: bold;
+}
+
+h4 {
+  font-size: rem(24);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 4%;
+  max-width: 1200px;
+}
+
+.section-title {
+  padding-top: 50px;
+  text-align: center;
+
+  &__main--en {
+    font-size: rem(54);
+    font-weight: bold;
+  }
+
+  &__sub--ja {
+    color: $base;
+    background-color: $main;
+    font-size: rem(14);
+
+    margin: 10px auto 0 auto;
+    padding: 4px 0 6px 0;
+    width: 200px;
+  }
+}
+
+// スクロールアニメーション
+.fadein {
+  opacity: 0;
+}
+
+.open {
+  opacity: 0;
+  transform: scale(0, 1);
+}
+
+// メールフォームバリテーション
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+/*
+header
+===============================================================================*/
+.gnav {
+  background-color: $main;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  translate: 100vw;
+  width: 400px;
+  z-index: 100;
+
+  &__list {
+    padding-top: 150px;
+    text-align: center;
+  }
+
+  &__item {
+    color: $base;
+    opacity: 0;
+    padding-top: 45px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  &__link {
+    font-size: rem(38);
+    position: relative;
+    padding: 0 10px;
+
+    &::after {
+      background: $base;
+      content: "";
+      height: 3px;
+      opacity: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: scale(0, 1);
+      transition: all 200ms ease;
+      width: 100%;
+    }
+
+    &:hover::after {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }
+}
+
+.hamburger {
+  background-color: transparent;
+  cursor: pointer;
+  height: 80px;
+  position: fixed;
+  right: 25px;
+  top: 25px;
+  transition: all 0.5s ease;
+  width: 80px;
+  z-index: 120;
+
+  &:hover {
+    background-color: $main;
+
+    .hamburger__line {
+      background-color: $base;
+    }
+
+    .hamburger__text {
+      color: $base;
+    }
+  }
+
+  &__line {
+    background-color: $main;
+    height: 2px;
+    position: absolute;
+    left: 15px;
+    transition: all 0.5s ease;
+    width: 50px;
+
+    &:nth-of-type(1) {
+      top: 23px;
+    }
+
+    &:nth-of-type(2) {
+      top: 40px;
+    }
+  }
+
+  &__text {
+    color: $main;
+    letter-spacing: 0.1em;
+    position: absolute;
+    left: 15px;
+    top: 50px;
+    transition: all 0.5s ease;
+  }
+}
+
+.hamburger.active {
+  .hamburger__line {
+    background-color: $base;
+    left: 15.5px;
+
+    &:nth-of-type(1) {
+      top: 38px;
+      transform: rotate(-45deg);
+    }
+
+    &:nth-of-type(2) {
+      top: 38px;
+      transform: rotate(45deg);
+    }
+  }
+
+  .hamburger__text {
+    opacity: 0;
+  }
+}
+
+/*
+footer
+===============================================================================*/
+.footer {
+  background-color: $main;
+  margin-top: 200px;
+  text-align: center;
+
+  &__copyright {
+    color: $base;
+    font-size: rem(12);
+    letter-spacing: 0.05rem;
+    padding: 20px 0;
+  }
+}
+
+/*
+レスポンシブ（width:600px）
+===============================================================================*/
+@media screen and (max-width: 600px) {
+  h4 {
+    font-size: rem(22);
+    font-weight: bold;
+  }
+  /*header**********************************************************************/
+  // ナビゲーション
+  .gnav {
+    translate: 100%;
+    width: 100%;
+
+    &__list {
+      padding-top: 120px;
+    }
+
+    &__link {
+      font-size: rem(36);
+    }
+  }
+
+  // ハンバーガーメニュー
+  .hamburger {
+    height: 60px;
+    right: 25px;
+    top: 25px;
+    width: 60px;
+
+    &__line {
+      left: 12px;
+      width: 35px;
+
+      &:nth-of-type(1) {
+        top: 15px;
+      }
+
+      &:nth-of-type(2) {
+        top: 27px;
+      }
+    }
+
+    &__text {
+      font-size: rem(11);
+      letter-spacing: 0.1em;
+      left: 12px;
+      top: 34px;
+    }
+  }
+
+  .hamburger.active {
+    .hamburger__line {
+      background-color: $base;
+      left: 13px;
+
+      &:nth-of-type(1) {
+        top: 29px;
+      }
+
+      &:nth-of-type(2) {
+        top: 29px;
+      }
+    }
+  }
+}
