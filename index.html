@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="萩尾智弘のポートフォリオサイト">
+  <title>Hagio Tomohiro's Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Twitterカード -->
+  <meta name="twitter:card" content="summary">
+  <meta property="og:url" content="https://pilina-cs.com/">
+  <meta property="og:title" content="Hagio Tomohiro's Portfolio">
+  <meta property="og:description" content="萩尾智弘のポートフォリオサイト">
+  <meta property="og:image" content="https://pilina-cs.com/img/twitter_card.png">
+  <!-- Googl font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ローディング画面 start -->
+  <div class="loading">
+    <div class="loading__text"></div>
+    <!--/splash-->
+  </div>
+  <!-- ローディング画面 end -->
+
+  <!-- header start -->
+  <header>
+    <!-- ハンバーガーメニュー -->
+    <div class="hamburger">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__text">MENU</span>
+    </div>
+    <!-- /.hamburger -->
+    <nav class="gnav">
+      <ul class="gnav__list">
+        <li class="gnav__item">
+          <a class="gnav__link" href="#top">HOME</a>
+        </li>
+        <li class="gnav__item">
+          <a class="gnav__link" href="#works">WORKS</a>
+        </li>
+        <li class="gnav__item">
+          <a class="gnav__link" href="#skill">SKILL</a>
+        </li>
+        <li class="gnav__item">
+          <a class="gnav__link" href="#about">ABOUT</a>
+        </li>
+        <li class="gnav__item">
+          <a class="gnav__link" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- header end -->
+
+  <!-- Main visual start -->
+  <div id="top" class="main-visual">
+    <h1 class="main-visual__title">
+      Tomohiro Hagio's Portfolio
+    </h1>
+    <div class="main-visual__mask"></div>
+  </div>
+  <!-- /.main-visual -->
+  <!-- Mainvisual end -->
+
+  <main class="container">
+    <!-- WORKS start -->
+    <section id="works" class="works">
+      <div class="section-title open">
+        <span class="section-title__main--en">WORKS</span>
+        <h2 class="section-title__sub--ja">制作実績</h2>
+      </div>
+      <!-- /.section-title -->
+      <div class="works__column">
+        <div class="works-card fadein">
+          <a href="sample-1.html">
+            <img class="works-card__image" src="img/sample1.png" alt="小さなパスタ屋Tino ホームページ">
+            <h3 class="works-card__title">小さなパスタ屋Tino様</h3>
+          </a>
+          <ul class="works-card__list">
+            <li class="works-card__item">実案件</li>
+            <li class="works-card__item">Webサイト</li>
+            <li class="works-card__item">デザイン</li>
+            <li class="works-card__item">コーディング</li>
+          </ul>
+        </div>
+        <!-- /.works-card -->
+        <div class="works-card fadein">
+          <a href="sample-2.html">
+            <img class="works-card__image" src="img/sample2.png" alt="株式会社アリオン ホームページ">
+            <h3 class="works-card__title">株式会社アリオン様</h3>
+          </a>
+          <ul class="works-card__list">
+            <li class="works-card__item">実案件</li>
+            <li class="works-card__item">Webサイト</li>
+            <li class="works-card__item">その他</li>
+            <li class="works-card__item">コーディング</li>
+            <li class="works-card__item">WordPress</li>
+          </ul>
+        </div>
+        <!-- /.works-card -->
+      </div>
+      <!-- /.works__column -->
+    </section>
+    <!-- WORKS end -->
+
+    <!-- SKILL start -->
+    <section id="skill" class="skill">
+      <div class="section-title open">
+        <span class="section-title__main--en">SKILL</span>
+        <h2 class="section-title__sub--ja">できること</h2>
+      </div>
+      <!-- /.section-title -->
+      <div class="skill__column">
+        <div class="skill__group">
+          <div class="skill-media fadein">
+            <div class="skill-media__image">
+              <img src="img/html-css.png" alt="HTML/CSS">
+            </div>
+            <!-- /.skill-media__image -->
+            <div class="skill-media__contents">
+              <h3 class="skill-media__title">HTML/CSS</h3>
+              <p class="skill-media__text">
+                アクセシビリティに配慮した構造設計に対応したコーディングが行えます。パソコン、スマートフォンなど様々なデバイスに合わせレスポンシブ対応が行えます。
+              </p>
+            </div>
+            <!-- /.skill-media__contents -->
+          </div>
+          <!-- /.skill-media -->
+          <div class="skill-media fadein">
+            <div class="skill-media__image">
+              <img src="img/sass.png" alt="Sass">
+            </div>
+            <!-- /.skill-media__image -->
+            <div class="skill-media__contents">
+              <h3 class="skill-media__title">Sass</h3>
+              <p class="skill-media__text">
+                Sass(Scss)記法にて整備性に配慮したコーディングが行えます。
+              </p>
+            </div>
+            <!-- /.skill-media__contents -->
+          </div>
+          <!-- /.skill-media -->
+          <div class="skill-media fadein">
+            <div class="skill-media__image">
+              <img src="img/javascript.png" alt="JavaScript">
+            </div>
+            <!-- /.skill-media__image -->
+            <div class="skill-media__contents">
+              <h3 class="skill-media__title">JavaScript</h3>
+              <p class="skill-media__text">
+                メイン画像をスライドショーにしたり、Webサイトにフェードイン・フェードアウトなどリッチな動きをつけることができます。
+              </p>
+            </div>
+            <!-- /.skill-media__contents -->
+          </div>
+          <!-- /.skill-media -->
+        </div>
+        <!-- /.skill__group -->
+        <div class="skill__group">
+          <div class="skill-media fadein">
+            <div class="skill-media__image">
+              <img src="img/php.png" alt="PHP">
+            </div>
+            <!-- /.skill-media__image -->
+            <div class="skill-media__contents">
+              <h3 class="skill-media__title">PHP</h3>
+              <p class="skill-media__text">
+                静的サイトへの問い合わせフォームの実装が行えます
+              </p>
+            </div>
+            <!-- /.skill-media__contents -->
+          </div>
+          <!-- /.skill-media -->
+          <div class="skill-media fadein">
+            <div class="skill-media__image">
+              <img src="img/Wordpress.png" alt="Wordpress">
+            </div>
+            <!-- /.skill-media__image -->
+            <div class="skill-media__contents">
+              <h3 class="skill-media__title">Wordpress</h3>
+              <p class="skill-media__text">
+                Wordpress製の店舗HP、企業HPなどWebサイトを0から構築することができます。
+              </p>
+            </div>
+            <!-- /.skill-media__contents -->
+          </div>
+          <!-- /.skill-media -->
+        </div>
+        <!-- /.skill__group -->
+      </div>
+      <!-- /.skill__column -->
+    </section>
+    <!-- SKILL start -->
+
+    <!-- ABOUT start -->
+    <section id="about" class="about">
+      <div class="section-title open">
+        <span class="section-title__main--en">ABOUT</span>
+        <h2 class="section-title__sub--ja">自己紹介</h2>
+      </div>
+      <!-- /.section-title -->
+      <div class="about__column fadein">
+        <div class="about__image">
+          <img src="img/about.jpg" alt="萩尾智弘">
+        </div>
+        <!-- /.about__image -->
+        <div class="about-body about__body">
+          <div class="about-body__heading">
+            <span class="about-body__name--en">Tomohiro Hagio</span>
+            <h3 class="about-body__name--ja">萩尾&#8194;智弘</h3>
+          </div>
+          <!-- /.about-body__title -->
+          <dl class="about-body__unit">
+            <dt class="about-body__title">所在地</dt>
+            <dd class="about-body__contents">福岡県福岡市</dd>
+            <dt class="about-body__title">自己紹介</dt>
+            <dd class="about-body__contents">
+              <p class="about-body__text">
+                作業療法士として15年リハビリに従事し2019年からはピラティスインストラクターとしても活動しています。
+              </p>
+              <p class="about-body__text">
+                患者様へリハビリの方法などをお伝えするチラシや冊子の作成から始まり、ピラティスインストラクターに
+                なってからは、スタジオのホームページの制作やリメイク、ホームページやSNSに載せる画像や動画編集、バナー制作など
+                デザインに関わる業務を担い、2024年からWebサイト制作、Webデザインを始めました。
+              </p>
+              <p class="about-body__text">
+                リハビリやピラティスインストラクターではお客様の話を聞き、相手の希望を把握し希望を実現するための方法を模索することが大事で、
+                Web制作の世界でもお客様に寄り添い希望を叶える手助けをしたいと思っています。
+              </p>
+            </dd>
+          </dl>
+        </div>
+        <!-- /.about-body -->
+      </div>
+      <!-- /.about__column -->
+    </section>
+    <!-- ABOUT end -->
+
+    <!-- CONTACT start  -->
+    <section id="contact" class="contact">
+      <div class="section-title open">
+        <span class="section-title__main--en">CONTACT</span>
+        <h2 class="section-title__sub--ja">お問い合わせ</h2>
+      </div>
+      <!-- /.section-title -->
+      <form class="contact-form fadein" action="mail.php" method="POST">
+        <dl class="contact-form__area">
+          <dt class="contact-form__title">
+            <label class="contact-form__label" for="name">Name</label>
+          </dt>
+          <dd class="contact-form__contents">
+            <input class="contact-form__input" type="text" id="name" name="name" autocomplete="name"
+              placeholder="名前を入力してください。">
+          </dd>
+          <dt class="contact-form__title">
+            <label class="contact-form__label" for="email">Mail Address</label>
+          </dt>
+          <dd class="contact-form__contents">
+            <input class="contact-form__input" type="email" id="email" name="email" autocomplete="email"
+              placeholder="メールアドレスを入力してください。">
+          </dd>
+          <dt class="contact-form__title">
+            <label class="contact-form__label" for="message">Message</label>
+          </dt>
+          <dd class="contact-form__contents">
+            <textarea class="contact-form__textarea" id="message" autocomplete="message" name="message"
+              placeholder="お問い合わせ内容を1000文字以内で入力してください。"></textarea>
+          </dd>
+        </dl>
+        <button class="contact-form__button" id="submit" type="submit">
+          送信する
+        </button>
+      </form>
+    </section>
+    <!-- CONTACT end  -->
+  </main>
+
+  <!-- footer start -->
+  <footer class="footer open">
+    <p class="footer__copyright">&copy; 2024 Tomohiro hagio</p>
+  </footer>
+  <!-- footer end -->
+
+  <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
